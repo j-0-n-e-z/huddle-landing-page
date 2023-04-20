@@ -855,6 +855,10 @@ video {
     padding-top: 55px;
   }
 
+  .lg\:pb-0{
+    padding-bottom: 0px;
+  }
+
   .lg\:text-start{
     text-align: start;
   }
