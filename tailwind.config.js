@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 module.exports = {
 	content: ['./dist/**/*.{html,js}'],
 	theme: {
@@ -10,6 +12,10 @@ module.exports = {
 			backgroundImage: {
 				desktop: 'url(./assets/images/bg-desktop.svg)',
 				mobile: 'url(./assets/images/bg-mobile.svg)'
+			},
+			fontFamily: {
+				Poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
+				OpenSans: ['Open Sans', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},
