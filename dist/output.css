@@ -532,6 +532,8 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -546,6 +548,14 @@ video {
   color: hsl(300 69% 71% / var(--tw-text-opacity));
 }
 
+.brand-icon:focus-visible{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: hsl(300 69% 71% / var(--tw-ring-opacity));
+}
+
 @media (min-width: 1024px){
   .brand-icon{
     height: 2.5rem;
@@ -553,16 +563,20 @@ video {
   }
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.mt-0{
-  margin-top: 0px;
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .mt-11{
   margin-top: 2.75rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-28{
@@ -573,172 +587,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-\[55px\]{
-  margin-top: 55px;
-}
-
-.mt-\[88px\]{
-  margin-top: 88px;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
-}
-
-.-mt-10{
-  margin-top: -2.5rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
-}
-
-.-mb-16{
-  margin-bottom: -4rem;
-}
-
-.-mb-10{
-  margin-bottom: -2.5rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
-.mb-14{
-  margin-bottom: 3.5rem;
-}
-
-.mb-12{
-  margin-bottom: 3rem;
-}
-
-.-mb-3{
-  margin-bottom: -0.75rem;
-}
-
-.-mb-5{
-  margin-bottom: -1.25rem;
-}
-
-.-mb-8{
-  margin-bottom: -2rem;
-}
-
-.-mt-4{
-  margin-top: -1rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mb-\[27px\]{
-  margin-bottom: 27px;
-}
-
-.mb-\[25px\]{
-  margin-bottom: 25px;
-}
-
-.mb-\[24px\]{
-  margin-bottom: 24px;
-}
-
-.mb-\[30px\]{
-  margin-bottom: 30px;
-}
-
-.mb-\[21px\]{
-  margin-bottom: 21px;
-}
-
-.mb-\[20px\]{
-  margin-bottom: 20px;
-}
-
-.mb-\[35px\]{
-  margin-bottom: 35px;
-}
-
-.-mt-2{
-  margin-top: -0.5rem;
-}
-
-.-mb-2{
-  margin-bottom: -0.5rem;
-}
-
-.-mb-4{
-  margin-bottom: -1rem;
-}
-
-.-mt-5{
-  margin-top: -1.25rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .flex{
   display: flex;
 }
 
-.grid{
-  display: grid;
-}
-
 .h-full{
   height: 100%;
-}
-
-.h-8{
-  height: 2rem;
-}
-
-.h-16{
-  height: 4rem;
 }
 
 .min-h-screen{
@@ -757,28 +611,12 @@ video {
   width: 100%;
 }
 
-.w-\[\]{
-  width: ;
-}
-
 .flex-col{
   flex-direction: column;
 }
 
-.place-items-center{
-  place-items: center;
-}
-
-.content-center{
-  align-content: center;
-}
-
 .items-center{
   align-items: center;
-}
-
-.justify-start{
-  justify-content: flex-start;
 }
 
 .justify-center{
@@ -789,14 +627,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-around{
-  justify-content: space-around;
-}
-
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
 .gap-x-14{
   -moz-column-gap: 3.5rem;
        column-gap: 3.5rem;
@@ -805,18 +635,6 @@ video {
 .gap-x-5{
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
-}
-
-.gap-y-32{
-  row-gap: 8rem;
-}
-
-.gap-y-28{
-  row-gap: 7rem;
-}
-
-.gap-y-24{
-  row-gap: 6rem;
 }
 
 .rounded-full{
@@ -841,30 +659,6 @@ video {
   background-size: contain;
 }
 
-.bg-cover{
-  background-size: cover;
-}
-
-.bg-center{
-  background-position: center;
-}
-
-.bg-left{
-  background-position: left;
-}
-
-.bg-right{
-  background-position: right;
-}
-
-.bg-top{
-  background-position: top;
-}
-
-.bg-right-top{
-  background-position: right top;
-}
-
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
@@ -878,14 +672,14 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-\[150px\]{
-  padding-left: 150px;
-  padding-right: 150px;
 }
 
 .py-6{
@@ -893,36 +687,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pt-16{
-  padding-top: 4rem;
-}
-
-.pt-3{
-  padding-top: 0.75rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
-}
-
 .text-center{
   text-align: center;
 }
 
-.font-Poppins{
-  font-family: Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.font-\[\'Open_Sans\'\]{
-  font-family: 'Open Sans';
-}
-
-.font-\[Poppins\]{
-  font-family: Poppins;
-}
-
 .font-OpenSans{
   font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-Poppins{
+  font-family: Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl{
@@ -939,8 +713,8 @@ video {
   font-size: 30px;
 }
 
-.text-\[48px\]{
-  font-size: 48px;
+.text-\[40px\]{
+  font-size: 40px;
 }
 
 .font-semibold{
@@ -971,6 +745,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -989,25 +768,40 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.focus-visible\:ring-2:focus-visible{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus-visible\:ring-softMagenta:focus-visible{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: hsl(300 69% 71% / var(--tw-ring-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:px-\[150px\]{
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .sm\:text-\[48px\]{
+    font-size: 48px;
+  }
+}
+
 @media (min-width: 768px){
   .md\:w-10\/12{
     width: 83.333333%;
   }
 
-  .md\:bg-desktop{
-    background-image: url(./assets/images/bg-desktop.svg);
-  }
-
-  .md\:bg-cover{
-    background-size: cover;
+  .md\:px-\[150px\]{
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }
 
 @media (min-width: 1024px){
-  .lg\:mt-10{
-    margin-top: 2.5rem;
-  }
-
   .lg\:mt-5{
     margin-top: 1.25rem;
   }
@@ -1016,16 +810,8 @@ video {
     margin-top: 1.5rem;
   }
 
-  .lg\:mt-16{
-    margin-top: 4rem;
-  }
-
-  .lg\:mt-14{
-    margin-top: 3.5rem;
-  }
-
-  .lg\:mt-11{
-    margin-top: 2.75rem;
+  .lg\:mt-8{
+    margin-top: 2rem;
   }
 
   .lg\:w-\[210px\]{
@@ -1041,20 +827,8 @@ video {
          column-gap: 1rem;
   }
 
-  .lg\:bg-desktop{
-    background-image: url(./assets/images/bg-desktop.svg);
-  }
-
-  .lg\:bg-auto{
-    background-size: auto;
-  }
-
   .lg\:bg-cover{
     background-size: cover;
-  }
-
-  .lg\:bg-center{
-    background-position: center;
   }
 
   .lg\:p-0{
@@ -1113,113 +887,12 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:my-\[80px\]{
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  .xl\:mb-0{
-    margin-bottom: 0px;
-  }
-
-  .xl\:mt-5{
-    margin-top: 1.25rem;
-  }
-
-  .xl\:mt-\[88px\]{
-    margin-top: 88px;
-  }
-
-  .xl\:mt-\[55px\]{
-    margin-top: 55px;
-  }
-
-  .xl\:mt-0{
-    margin-top: 0px;
-  }
-
-  .xl\:mb-5{
-    margin-bottom: 1.25rem;
-  }
-
   .xl\:mb-10{
     margin-bottom: 2.5rem;
   }
 
-  .xl\:mt-\[80px\]{
-    margin-top: 80px;
-  }
-
-  .xl\:mb-16{
-    margin-bottom: 4rem;
-  }
-
-  .xl\:mb-20{
-    margin-bottom: 5rem;
-  }
-
-  .xl\:mt-\[60px\]{
-    margin-top: 60px;
-  }
-
-  .xl\:mt-\[90px\]{
-    margin-top: 90px;
-  }
-
-  .xl\:mt-\[50px\]{
-    margin-top: 50px;
-  }
-
-  .xl\:mt-10{
-    margin-top: 2.5rem;
-  }
-
-  .xl\:mt-3{
-    margin-top: 0.75rem;
-  }
-
-  .xl\:mt-2{
-    margin-top: 0.5rem;
-  }
-
-  .xl\:mt-4{
-    margin-top: 1rem;
-  }
-
-  .xl\:mt-\[70px\]{
-    margin-top: 70px;
-  }
-
-  .xl\:mt-\[82px\]{
-    margin-top: 82px;
-  }
-
-  .xl\:mt-\[100px\]{
-    margin-top: 100px;
-  }
-
-  .xl\:mt-\[83px\]{
-    margin-top: 83px;
-  }
-
-  .xl\:mt-\[78px\]{
-    margin-top: 78px;
-  }
-
-  .xl\:mt-\[75px\]{
-    margin-top: 75px;
-  }
-
-  .xl\:mt-\[85px\]{
-    margin-top: 85px;
-  }
-
-  .xl\:mt-\[73px\]{
-    margin-top: 73px;
-  }
-
-  .xl\:grid{
-    display: grid;
+  .xl\:mt-0{
+    margin-top: 0px;
   }
 
   .xl\:w-2\/5{
@@ -1234,46 +907,20 @@ video {
     flex-direction: row;
   }
 
-  .xl\:place-items-center{
-    place-items: center;
-  }
-
-  .xl\:content-start{
-    align-content: flex-start;
-  }
-
-  .xl\:items-center{
-    align-items: center;
-  }
-
   .xl\:justify-start{
     justify-content: flex-start;
-  }
-
-  .xl\:justify-center{
-    justify-content: center;
-  }
-
-  .xl\:gap-y-0{
-    row-gap: 0px;
   }
 
   .xl\:bg-desktop{
     background-image: url(./assets/images/bg-desktop.svg);
   }
 
-  .xl\:bg-center{
-    background-position: center;
+  .xl\:bg-desktopPos{
+    background-position: -60px 0;
   }
 
   .xl\:px-0{
     padding-left: 0px;
     padding-right: 0px;
-  }
-}
-
-@media (min-width: 1536px){
-  .\32xl\:bg-cover{
-    background-size: cover;
   }
 }

@@ -13,6 +13,9 @@ module.exports = {
 				desktop: 'url(./assets/images/bg-desktop.svg)',
 				mobile: 'url(./assets/images/bg-mobile.svg)'
 			},
+			backgroundPosition: {
+				desktopPos: '-60px 0'
+			},
 			fontFamily: {
 				Poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
 				OpenSans: ['Open Sans', ...defaultTheme.fontFamily.sans]

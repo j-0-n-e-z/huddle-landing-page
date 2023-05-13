@@ -7,6 +7,6 @@
 
 @layer components {
 	.brand-icon {
-		@apply lg:w-10 lg:h-10 w-[54px] h-[54px] text-white rounded-full border-[1px] border-white grid place-items-center hover:text-softMagenta hover:border-softMagenta transition cursor-pointer;
+		@apply lg:w-10 lg:h-10 w-[54px] h-[54px] text-white rounded-full border-[1px] border-white grid place-items-center hover:text-softMagenta hover:border-softMagenta transition cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-softMagenta;
 	}
 }
